@@ -2,13 +2,13 @@ name: "YAML file linter"
 description: "Lint a YAML file"
 author: "J.T."
 inputs:
-    pathos:
-        description: "Path to YAML file"
-        required: true
     strict:
         description: "Run the linter in strict mode (error on warnings)"
         required: true
         default: false
+    path:
+        description: "Path to YAML file"
+        required: true
 outputs:
     warnings:
         description: "Number of warnings raised"

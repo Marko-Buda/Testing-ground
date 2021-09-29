@@ -8,7 +8,7 @@ from yamllint.config import YamlLintConfig
 def main():
     yaml_path = os.environ["INPUT_PATH"]
 
-    strict = os.environ["INPUT_STRICT"] == "true"
+    strict = "true"
     conf = YamlLintConfig("extends: default")
     warning_count = 0
 
