@@ -7,7 +7,7 @@ inputs:
         required: true
     strict:
         description: "Run the linter in strict mode (error on warnings)"
-        required: false
+        required: true
         default: false
 outputs:
     warnings:
