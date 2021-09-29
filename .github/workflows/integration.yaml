@@ -1,3 +1,4 @@
+---
 name: Integration Test
 on: [push]
 jobs:
@@ -12,4 +13,4 @@ jobs:
           path: "tests/valid.yaml"
       - name: Check outputs and modified files
         run: |
-                    test "${{ steps.selftest.outputs.warnings }}" == "1"
+                    test "${{ steps.selftest.outputs.warnings }}" == "0"
