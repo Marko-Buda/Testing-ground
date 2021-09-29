@@ -6,7 +6,7 @@ from yamllint.config import YamlLintConfig
 
 
 def main():
-    yaml_path  = os.environ["INPUT_PATH"]
+    yaml_path = os.environ["INPUT_PATH"]
 
     strict = os.environ["INPUT_STRICT"] == "true"
     conf = YamlLintConfig("extends: default")
@@ -34,6 +34,7 @@ def main():
     print(f"::set-output name=warnings::{warning_count}")
 
     sys.exit(0)
+
 
 if __name__ == "__main__":
     main()
