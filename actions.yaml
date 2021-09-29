@@ -2,7 +2,7 @@ name: "YAML file linter"
 description: "Lint a YAML file"
 author: "J.T."
 inputs:
-    path:
+    pathos:
         description: "Path to YAML file"
         required: true
     strict:
